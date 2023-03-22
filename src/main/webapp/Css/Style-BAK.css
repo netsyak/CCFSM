@@ -1,0 +1,62 @@
+@charset "UTF-8";
+a { 
+  text-decoration-line: none;
+}
+
+.dropdown{
+  position : relative;
+  display : inline-block;
+}
+
+.dropdown-content{
+  display : none;
+  position : absolute;
+  z-index : 1; /*다른 요소들보다 앞에 배치*/
+}
+
+.dropdown-content a{
+  display : block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+div {
+  background: black;
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.dropbtn {
+  width: 220px;
+  position: relative;
+  height: 40px;
+
+}
+
+.dropdown-content {
+  vertical-align: middle;
+  float: left;
+  line-height: 20px;
+  overflow: hidden;
+  position: absolute;
+  width: 220px;
+  height: 20px;
+  flex-direction: row;
+
+}
+
+/* .small {
+  line-height: 20px;
+  width: 50px;
+  height: 20px;
+  display: none;
+  margin-right: -1px;
+}
+
+.big:hover .small {
+  display: inline-block;
+ */}

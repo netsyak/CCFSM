@@ -1,66 +1,34 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<head>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<style>
 
-<table border="1" width="90%">
+</style>
+</head>
+<table border="1" width="100%">
+
+
 	<tr>
-		<td align="center">
-  &nbsp;&nbsp;&nbsp; <a href="../">센터소개</a> 
-  &nbsp;&nbsp;&nbsp; <a href="../">체험관</a>
-  &nbsp;&nbsp;&nbsp; <a href="../">식단/표준 레시피</a>
-  &nbsp;&nbsp;&nbsp; <a href="../">알림마당</a>
-  &nbsp;&nbsp;&nbsp;
-	
-	
-	<a href=""></a>
-	<div>
-              <ul id="menu">
-                <li>
-                  menu1
-                  <ul class="submenu">
-                    <li><a href="">submenu1</a></li>
-                    <li><a href="">submenu2</a></li>
-                    <li><a href="">submenu3</a></li>
-                  </ul>
-                </li>
-                <li>
-                  menu2
-                  <ul class="submenu">
-                    <li><a href="">submenu1</a></li>
-                    <li><a href="">submenu2</a></li>
-                    <li><a href="">submenu3</a></li>
-                  </ul>
-                </li>
-                <li>
-                  menu3
-                  <ul class="submenu">
-                    <li><a href="">submenu1</a></li>
-                    <li><a href="">submenu2</a></li>
-                    <li><a href="">submenu3</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-			<!-- 로그인 여부에 따른 메뉴 변화 -->  
-<%
+		<td align="right">
+			<a href="../Login/Main.jsp">HOME |</a>
+			<%
  if (session.getAttribute("UserId") == null) {
- %> <a href="../Login/LoginForm.jsp">로그인</a> <%
+ %>
+			<a href="../Login/LoginForm.jsp">LOGIN |</a>
+			<%
  } else {
- %> <a href="../Login/Logout.jsp">로그아웃</a> <%
+ %>
+			<a href="../Login/Logout.jsp">LOGOUT |</a>
+			<%
  }%>
+			<a href="Join.jsp">JOIN |</a>
+			<a href="../">SITEMAP</a>
+
 		</td>
+
 	</tr>
+
 
 </table>

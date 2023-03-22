@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+a {
+	text-decoration-line: none;
+}
+
+div {
+	text-align: left;
+}
+
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	z-index: 1; /*다른 요소들보다 앞에 배치*/
+}
+
+.dropdown-content a {
+	display: block;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
